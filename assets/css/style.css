@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Variables */
+:root {
+    --black: #080f0f;
+    --white: #ffffff;
+    --blue: #3590f3;
+    --green: #0CCA4A;
+}
+
+/* Brand Img */
+img.brand {
+    max-width: fit-content;
+    height: 100px;
+}
+
+
+/* Navigation Bar */
+nav {
+    border-bottom: 1px solid #82735C;
+}
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--black);
+}
+
+.navbar-nav .nav-link:active {
+    color: var(--blue);
+}
+
+/* Base Button */
+.btn {
+    font-weight: 600;
+    font-size: .875rem;
+}
+
+/* Resume Button */
+.btn-resume {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.btn-resume:hover {
+    background-color: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+}
+
+.btn-resume:active {
+    background-color: var(--blue) !important;
+    color: var(--white) !important;
+}
+
+/* Main */
+
+/* Home Section */
+/* section {
+    padding: 8.75rem 0;
+} */
+
+.home-img img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+img {
+    vertical-align: middle;
+}
+
