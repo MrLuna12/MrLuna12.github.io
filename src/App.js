@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import './index.css';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         >
           Learn React
         </a>
+        <h1 className='italic'>Hello World</h1>
       </header>
     </div>
   );
