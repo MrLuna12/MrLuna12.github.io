@@ -4,37 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Luna's Personal Website</title>
-    <link href="/app/styles/tailwind_output.css" rel="stylesheet">
+    <title>Michael Luna, Software Engineer</title>
+    <link href="/app/styles/tailwind_output.css?v=1.0.2" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1ce531afba.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header class="fixed top-0 w-full flex justify-between items-center p-4 bg-neutral-100 shadow-md z-10">
-            <div class="border-2 border-red-400">
-                <img src="/app/images/brand.svg" class="h-20 w-20">
-            </div>
+<body class="bg-[#BDBDBD]">
+    <header class="text-2xl p-2 border-2 border-[#413d3d] flex justify-between">
+        <div class="flex items-center gap-2 p-1">
+            <h1 class="text-xl">LUNA</h1>
+            <i class="fa-solid fa-moon fa-flip-horizontal fa-sm"></i>
+        </div>
 
-            <div class="flex gap-4">
-                <a href="#about" class="text-lg hover:underline hover:underline-offset-8 hover:hover:underline hover:decoration-blue-500 hover:decoration-4">About</a>
-                <a href="#projects" class="text-lg hover:underline hover:underline-offset-8 hover:hover:underline hover:decoration-blue-500 hover:decoration-4">Projects</a>
-                <a href="#contact" class="text-lg hover:underline hover:underline-offset-8 hover:hover:underline hover:decoration-blue-500 hover:decoration-4">Contact</a>
-            </div>
+        <div class="flex items-center btn">
+            <a href="app/Michael Luna Software Engineer.pdf" download="Michael_Luna_Resume" class="">
+                Resume <i class="fa-solid fa-arrow-right fa-rotate-90"></i> 
+            </a>
+        </div>
     </header>
 
-    <main>
-        <div id="about" class="border-2 border-red-700 h-screen">
-            <h1>About</h1>
-        </div>
+    <main class="p-2 flex flex-col items-start justify-center min-h-screen space-y-2">
+        <h2 class="text-6xl">Michael Luna,</h2>
+        <h2 class="text-6xl font-medium"> Software Engineer</h2>
 
-        <div id="projects" class="border-2 border-blue-700 h-screen">
-            <h1>Projects</h1>
-        </div>
-
-        <div id="contact" class="border-2 border-orange-700 h-screen">
-            Contact
+        <div class="flex items-center space-x-4 mt-6">
+            <a href="#" target="_blank" class="btn-primary">Let's get to coding</a>
+            <a href="https://github.com/MrLuna12" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/michael-j-luna/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:michael.luna@gmail.com"><i class="fa-solid fa-envelope"></i></a>
         </div>
     </main>
+
+    <section id="resume" class="py-20 bg-gray-800">
+        <h3 class="text-4xl text-center">Resume Section</h3>
+    </section>
+
+    <section id="portfolio" class="py-20 bg-gray-700">
+        <h3 class="text-4xl text-center">Portfolio Section</h3>
+    </section>
 </body>
 
 </html>
