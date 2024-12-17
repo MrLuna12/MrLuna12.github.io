@@ -1,33 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root {
-    --primary: #f1f500;
-    --secondary: #02a9ea;
-    --tertiary: #ff01fb;
-    --dark: #000300;
-    --light: #ffffff;
 
+:root {
+    /* --variable_name: value; */
 }
 
-.btn-primary {
+body {
+    font-family: 'Fira Code', monospace;
+}
+
+.btn {
     @apply bg-transparent;
-    @apply text-[var(--primary)];
-    @apply border-[var(--secondary)];
+    @apply border-black;
     @apply border-2;
     @apply items-center rounded cursor-pointer inline-flex text-sm gap-2.5 justify-center leading-6 py-2 px-6 no-underline;
 
     > p {
         @apply m-0 leading-5;
     }
-
-    /* &:hover,
-    &:focus,
-    &:active {
-        @apply bg-gray-300 border-gray-300 text-gray-800 no-underline;
-    }
-
-    &:visited {
-        @apply text-gray-800 no-underline;
-    } */
 }

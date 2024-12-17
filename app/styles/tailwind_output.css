@@ -554,8 +554,8 @@ video {
   display: none;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .flex {
@@ -570,6 +570,10 @@ video {
   flex-direction: column;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
@@ -578,15 +582,38 @@ video {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.bg-black {
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-\[\#413d3d\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(65 61 61 / var(--tw-border-opacity, 1));
+}
+
+.bg-\[\#BDBDBD\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+  background-color: rgb(189 189 189 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gray-700 {
@@ -599,8 +626,12 @@ video {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
 }
 
-.p-5 {
-  padding: 1.25rem;
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .py-20 {
@@ -612,8 +643,9 @@ video {
   text-align: center;
 }
 
-.font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-4xl {
@@ -631,40 +663,22 @@ video {
   line-height: 1.75rem;
 }
 
-.font-extrabold {
-  font-weight: 800;
-}
-
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity, 1));
-}
-
-.text-yellow-400 {
-  --tw-text-opacity: 1;
-  color: rgb(250 204 21 / var(--tw-text-opacity, 1));
-}
-
-.text-\[var\(primary\)\] {
-  color: var(primary);
-}
-
-.text-\[var\(--primary\)\] {
-  color: var(--primary);
+.font-medium {
+  font-weight: 500;
 }
 
 :root {
-  --primary: #f1f500;
-  --secondary: #02a9ea;
-  --tertiary: #ff01fb;
-  --dark: #000300;
-  --light: #ffffff;
+  /* --variable_name: value; */
 }
 
-.btn-primary {
+body {
+  font-family: 'Fira Code', monospace;
+}
+
+.btn {
   background-color: transparent;
-  color: var(--primary);
-  border-color: var(--secondary);
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
   border-width: 2px;
   display: inline-flex;
   cursor: pointer;
@@ -685,13 +699,4 @@ video {
   > p {
     line-height: 1.25rem;
   }
-  /* &:hover,
-    &:focus,
-    &:active {
-        @apply bg-gray-300 border-gray-300 text-gray-800 no-underline;
-    }
-
-    &:visited {
-        @apply text-gray-800 no-underline;
-    } */
 }
