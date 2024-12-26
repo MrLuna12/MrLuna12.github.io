@@ -11,12 +11,31 @@ body {
 }
 
 .btn {
-    @apply bg-transparent;
-    @apply border-black;
-    @apply border-2;
-    @apply items-center rounded cursor-pointer inline-flex text-sm gap-2.5 justify-center leading-6 py-2 px-6 no-underline;
+    @apply bg-[#007BFF] border-[#007bff] no-underline;
+    @apply text-white leading-6 cursor-pointer;
+    @apply border-2 rounded;
+    @apply inline-flex items-center justify-center gap-2.5 transition-all duration-150;
+}
 
-    > p {
-        @apply m-0 leading-5;
-    }
+
+.btn:hover {
+    @apply bg-[#0069d9];
+    @apply border-[#0062cc];
+}
+
+
+.btn:active {
+    @apply bg-[#0056D2];
+    @apply border-[#0056D2];
+    @apply ring-2 ring-[#80BDFF];
+}
+
+.btn-sm {
+    @apply btn;
+    @apply text-base py-1 px-3;
+}
+
+.btn-lg {
+    @apply btn;
+    @apply text-base py-2 px-6;
 }
